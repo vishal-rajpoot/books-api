@@ -1,7 +1,7 @@
 import * as db from "../../middlewares/db.js";
 import { addBookDao, getAllBooksDao } from "./booksDao.js";
 
-const getAllBooksService = async (userId) => {
+const getAllBooksService = async () => {
   let conn;
   try {
     conn = await db.fetchConn();
